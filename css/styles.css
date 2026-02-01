@@ -120,8 +120,21 @@ hr.sep{
 }
 .btn .left{
   display:flex;
+  align-items:center;
+  gap:12px;
+}
+.btn .app-text{
+  display:flex;
   flex-direction:column;
   gap:2px;
+}
+.btn .app-icon{
+  width:44px;
+  height:44px;
+  border-radius: 12px;
+  border:0px solid var(--border);
+  background: rgba(255,255,255,0.08);
+  object-fit: cover;
 }
 .btn .title{
   font-weight: 650;

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Ownership verification page for Cardio Can Wait." />
+  <title>Ownership verification • Cardio Can Wait</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+</head>
+<body>
+  <div class="container">
+    <div class="shell" style="grid-template-columns:1fr;">
+      <main class="card">
+        <div class="brand">
+          <img src="assets/logo.png" alt="Cardio Can Wait logo" />
+          <div>
+            <h1>Ownership verification</h1>
+            <p>Cardio Can Wait</p>
+          </div>
+        </div>
+
+        <p class="smallnote">
+          Some platforms ask you to prove you control the site by:
+          (1) uploading a file at the website root, or
+          (2) adding a specific <span class="codebox">&lt;meta&gt;</span> tag to your homepage.
+        </p>
+
+        <hr class="sep" />
+
+        <h2 style="margin:0 0 8px 0; font-size:1.05rem;">Option A: add a meta tag</h2>
+        <p class="smallnote">
+          If the platform gives you a meta tag, paste it into <span class="codebox">index.html</span> inside the <span class="codebox">&lt;head&gt;</span>.
+        </p>
+
+        <div class="codebox">
+&lt;!-- Example: &lt;meta name="google-site-verification" content="..."/&gt; --&gt;
+        </div>
+
+        <h2 style="margin:18px 0 8px 0; font-size:1.05rem;">Option B: upload a verification file</h2>
+        <p class="smallnote">
+          If they give you a file like <span class="codebox">google1234567890abcdef.html</span>, place it next to
+          <span class="codebox">index.html</span> (website root) and redeploy.
+        </p>
+
+        <h2 style="margin:18px 0 8px 0; font-size:1.05rem;">Option C: .well-known</h2>
+        <p class="smallnote">
+          If they require something under <span class="codebox">/.well-known/</span>, put it in the folder
+          <span class="codebox">.well-known/</span> in this project.
+        </p>
+
+        <hr class="sep" />
+        <div class="footer">
+          <a href="index.html">← Home</a>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

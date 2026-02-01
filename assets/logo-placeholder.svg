@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#g)"/>
+  <path d="M256 392c-70-48-132-102-132-174 0-44 32-78 76-78 28 0 47 12 56 28 9-16 28-28 56-28 44 0 76 34 76 78 0 72-62 126-132 174z"
+        fill="#f43f5e"/>
+  <path d="M150 268h52l20-44 34 92 24-52h82" fill="none" stroke="#f8fafc" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="256" y="470" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" font-size="28" fill="#e5e7eb">Cardio Can Wait</text>
+</svg>

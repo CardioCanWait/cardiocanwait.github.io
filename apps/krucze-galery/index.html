@@ -3,58 +3,92 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="A custom public website and member workspace for Bractwo Wojowników Kruki." />
+  <meta name="description" content="A custom public website and members’ workspace for Bractwo Wojowników Kruki." />
   <title>Krucze Galery • Cardio Can Wait</title>
   <link rel="icon" href="../../assets/logo.png" type="image/png" />
   <link rel="stylesheet" href="../../css/case-study.css" />
 </head>
 <body>
   <main class="showcase">
-    <header class="topbar">
-      <a class="brand" href="../../index.html"><img src="../../assets/logo.png" alt="" /><span>Cardio Can Wait<br /><small>Selected work</small></span></a>
-      <a class="back" href="../../index.html">← All projects</a>
-    </header>
-
-    <section class="hero">
-      <div>
-        <p class="eyebrow">CUSTOM PLATFORM · MOBILE FIRST</p>
-        <h1>Krucze Galery</h1>
-        <p class="lead">A custom-built public website and private workspace for the reenactment community Bractwo Wojowników Kruki.</p>
-        <div class="actions"><a class="button primary" href="https://www.kruki.org/" target="_blank" rel="noopener noreferrer">Visit the live site ↗</a><a class="button secondary" href="#members">Explore the app ↓</a></div>
-      </div>
-      <figure class="phone-figure hero-phone">
-        <a class="phone" href="../../assets/projects/screenshots/feed.jpg" target="_blank" rel="noopener noreferrer"><img src="../../assets/projects/screenshots/feed.jpg" alt="Android view of the live public Facebook feed" width="830" height="1600" /></a>
-        <figcaption>Public feed · Android</figcaption>
-      </figure>
+    <header class="topbar"><a class="brand" href="../../index.html"><img src="../../assets/logo.png" alt="" /><span>Cardio Can Wait <small>Selected work</small></span></a><a class="back" href="../../index.html">← All projects</a></header>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow"><span></span> SELECTED WORK / KRUCZE GALERY</p><h1 id="hero-title">A place for <em>the whole story.</em></h1><p class="hero-lede">A custom website and members’ workspace for Bractwo Wojowników Kruki, a historical reenactment group.</p><a class="button" href="https://www.kruki.org/" target="_blank" rel="noopener noreferrer">Explore the live site <span>↗</span></a><div class="hero-foot"><span>PUBLIC WEBSITE</span><span>MEMBERS’ PWA</span><span>GOOGLE CLOUD</span></div></div>
+      <div class="hero-art"><div class="hero-orbit" aria-hidden="true"></div><figure class="device-figure hero-back">
+  <div class="device android" data-demo>
+    <div class="device-screen">
+      <div class="status-bar" aria-hidden="true"><span>9:41</span><span>▮▮▮ ◕ ▰</span></div>
+      <video class="demo-video" muted loop playsinline preload="metadata" controls poster="../../assets/projects/demos/warriors.jpg" aria-label="Warrior gallery; scroll or use the arrow keys to explore">
+        <source src="../../assets/projects/demos/warriors.mp4" type="video/mp4" />
+      </video>
+      <button class="device-control" type="button" aria-label="Pause Warrior gallery" hidden><span aria-hidden="true">Ⅱ</span></button>
+      <span class="home-indicator" aria-hidden="true"></span>
+    </div>
+  </div>
+  <figcaption><span class="caption-dot"></span>Warrior gallery</figcaption>
+</figure><figure class="device-figure hero-front">
+  <div class="device iphone" data-demo>
+    <div class="device-screen">
+      <div class="status-bar" aria-hidden="true"><span>9:41</span><span>▮▮▮ ◕ ▰</span></div>
+      <div class="demo-scroll" tabindex="0" role="region" aria-label="Social feed; scroll to explore"><div class="scroll-stack"><img src="../../assets/projects/screenshots/feed.jpg" alt="" loading="lazy" /><img src="../../assets/projects/demos/feed-continuation.jpg" alt="" loading="lazy" /></div></div>
+      <button class="device-control" type="button" aria-label="Pause Social feed" hidden><span aria-hidden="true">Ⅱ</span></button>
+      <span class="home-indicator" aria-hidden="true"></span>
+    </div>
+  </div>
+  <figcaption><span class="caption-dot"></span>Social feed</figcaption>
+</figure></div>
     </section>
-
-    <section class="section" aria-labelledby="public-title">
-      <div class="section-copy"><p class="eyebrow">PUBLIC SITE</p><h2 id="public-title">The group, in public.</h2><p>Facebook posts are gathered automatically, with Instagram, YouTube and a gallery of warriors alongside them.</p><p class="demo-note">Select a screen to enlarge it.</p></div>
-      <div class="phones">
-        <figure class="phone-figure"><a class="phone" href="../../assets/projects/screenshots/feed-more.jpg" target="_blank" rel="noopener noreferrer"><img src="../../assets/projects/screenshots/feed-more.jpg" alt="Public Facebook feed and Instagram integration" width="830" height="1600" loading="lazy" /></a><figcaption>Social feed · Android</figcaption></figure>
-        <figure class="phone-figure"><a class="phone iphone" href="../../assets/projects/screenshots/public-iphone.jpg" target="_blank" rel="noopener noreferrer"><img src="../../assets/projects/screenshots/public-iphone.jpg" alt="Live public warrior gallery on iPhone" width="1003" height="1800" loading="lazy" /></a><figcaption>Warrior gallery · iPhone</figcaption></figure>
-      </div>
-    </section>
-
-    <section class="section member-section" id="members" aria-labelledby="members-title">
-      <div class="section-copy"><p class="eyebrow">MEMBERS ONLY</p><h2 id="members-title">A workspace for the group.</h2><p>Members manage events, fees and profiles, and upload their own photos. Administrators and moderators manage members and group branches.</p><p class="demo-note">Private views use fictional people, photos, events and payment data.</p></div>
-      <div class="phones">
-        <figure class="phone-figure"><a class="phone iphone" href="../../assets/projects/screenshots/members-iphone.jpg" target="_blank" rel="noopener noreferrer"><img src="../../assets/projects/screenshots/members-iphone.jpg" alt="iPhone fees overview with fictional figures" width="1003" height="1800" loading="lazy" /></a><figcaption>Fees · iPhone</figcaption></figure>
-        <figure class="phone-figure"><a class="phone" href="../../assets/projects/screenshots/dashboard.jpg" target="_blank" rel="noopener noreferrer"><img src="../../assets/projects/screenshots/dashboard.jpg" alt="Member dashboard with fictional fees, events and photos" width="830" height="1600" loading="lazy" /></a><figcaption>Member panel · Android</figcaption></figure>
-        <figure class="phone-figure"><a class="phone" href="../../assets/projects/screenshots/events.jpg" target="_blank" rel="noopener noreferrer"><img src="../../assets/projects/screenshots/events.jpg" alt="Event list with four fictional events" width="830" height="1600" loading="lazy" /></a><figcaption>Events · Android</figcaption></figure>
-        <figure class="phone-figure"><a class="phone" href="../../assets/projects/screenshots/event-detail.jpg" target="_blank" rel="noopener noreferrer"><img src="../../assets/projects/screenshots/event-detail.jpg" alt="Fictional event detail with signups and filters" width="830" height="1600" loading="lazy" /></a><figcaption>Event details · Android</figcaption></figure>
-      </div>
-    </section>
-
-    <section class="section interaction" aria-labelledby="interaction-title">
-      <div class="section-copy"><p class="eyebrow">SEE IT IN ACTION</p><h2 id="interaction-title">Filter. Open. See the details.</h2><p>Filter by branch, then open a member’s profile and payment status.</p><button class="button primary demo-toggle" type="button" aria-pressed="false" aria-controls="filter-demo">Play demo ▶</button><p class="demo-note">A sequence of real app screens with fictional data.</p></div>
-      <figure class="phone-figure"><a class="phone" href="../../assets/projects/screenshots/drawer.jpg" target="_blank" rel="noopener noreferrer"><img id="filter-demo" src="../../assets/projects/screenshots/drawer.jpg" data-still="../../assets/projects/screenshots/drawer.jpg" data-animation="../../assets/projects/screenshots/filter-and-profile.gif" alt="Demo of filtering members and opening a fictional profile with fee status" width="830" height="1600" loading="lazy" /></a><figcaption>Filter &amp; profile · Android</figcaption></figure>
-    </section>
-
-    <section class="infrastructure" aria-labelledby="infrastructure-title"><p class="eyebrow">BUILT AROUND EXISTING TOOLS</p><h2 id="infrastructure-title">Google Cloud meets Google Drive.</h2><p>A Google Cloud backend reuses the group’s existing Google Drive archive for photos and files.</p></section>
+    <section class="intro section" aria-labelledby="public-title"><div class="section-index">01 <span>/ PUBLIC PRESENCE</span></div><div class="intro-copy"><h2 id="public-title">Their world, <em>shared.</em></h2><p>Automatic Facebook posts, Instagram and YouTube bring the group’s stories together with its warrior gallery.</p><div class="tags"><span>FACEBOOK FEED</span><span>INSTAGRAM</span><span>YOUTUBE</span></div></div></section>
+    <section class="members section" id="members" aria-labelledby="members-title"><div class="section-heading"><div><div class="section-index">02 <span>/ MEMBERS’ SPACE</span></div><h2 id="members-title">Made for the <em>people behind it.</em></h2></div><p>Events, fees, profiles and shared photos in one place. Members contribute their own content; moderators manage the group’s branches.</p></div><div class="device-gallery"><figure class="device-figure ">
+  <div class="device iphone" data-demo>
+    <div class="device-screen">
+      <div class="status-bar" aria-hidden="true"><span>9:41</span><span>▮▮▮ ◕ ▰</span></div>
+      <div class="demo-scroll" tabindex="0" role="region" aria-label="Member panel; scroll to explore"><div class="scroll-stack"><img src="../../assets/projects/demos/dashboard-upper.jpg" alt="" loading="lazy" /><img src="../../assets/projects/demos/dashboard-continuation.jpg" alt="" loading="lazy" /></div></div>
+      <button class="device-control" type="button" aria-label="Pause Member panel" hidden><span aria-hidden="true">Ⅱ</span></button>
+      <span class="home-indicator" aria-hidden="true"></span>
+    </div>
+  </div>
+  <figcaption><span class="caption-dot"></span>Member panel</figcaption>
+</figure><figure class="device-figure ">
+  <div class="device android" data-demo>
+    <div class="device-screen">
+      <div class="status-bar" aria-hidden="true"><span>9:41</span><span>▮▮▮ ◕ ▰</span></div>
+      <video class="demo-video" muted loop playsinline preload="metadata" controls poster="../../assets/projects/demos/events.jpg" aria-label="Events; scroll or use the arrow keys to explore">
+        <source src="../../assets/projects/demos/events.mp4" type="video/mp4" />
+      </video>
+      <button class="device-control" type="button" aria-label="Pause Events" hidden><span aria-hidden="true">Ⅱ</span></button>
+      <span class="home-indicator" aria-hidden="true"></span>
+    </div>
+  </div>
+  <figcaption><span class="caption-dot"></span>Events</figcaption>
+</figure><figure class="device-figure ">
+  <div class="device iphone" data-demo>
+    <div class="device-screen">
+      <div class="status-bar" aria-hidden="true"><span>9:41</span><span>▮▮▮ ◕ ▰</span></div>
+      <video class="demo-video" muted loop playsinline preload="metadata" controls poster="../../assets/projects/demos/event-detail.jpg" aria-label="Event details; scroll or use the arrow keys to explore">
+        <source src="../../assets/projects/demos/event-detail.mp4" type="video/mp4" />
+      </video>
+      <button class="device-control" type="button" aria-label="Pause Event details" hidden><span aria-hidden="true">Ⅱ</span></button>
+      <span class="home-indicator" aria-hidden="true"></span>
+    </div>
+  </div>
+  <figcaption><span class="caption-dot"></span>Event details</figcaption>
+</figure></div></section>
+    <section class="feature section" aria-labelledby="feature-title"><div class="feature-copy"><div class="section-index">03 <span>/ MEMBER MANAGEMENT</span></div><h2 id="feature-title">The details, <em>at a glance.</em></h2><p>Filter members by branch, open a profile and see their contribution status.</p><div class="feature-rule"><span>FILTER</span><span>PROFILE</span><span>FEES</span></div></div><div class="feature-art"><div class="feature-glow" aria-hidden="true"></div><figure class="device-figure feature-phone">
+  <div class="device android" data-demo>
+    <div class="device-screen">
+      <div class="status-bar" aria-hidden="true"><span>9:41</span><span>▮▮▮ ◕ ▰</span></div>
+      <video class="demo-video" muted loop playsinline preload="metadata" controls poster="../../assets/projects/demos/member.jpg" aria-label="Members & fees; scroll or use the arrow keys to explore">
+        <source src="../../assets/projects/demos/member.mp4" type="video/mp4" />
+      </video>
+      <button class="device-control" type="button" aria-label="Pause Members & fees" hidden><span aria-hidden="true">Ⅱ</span></button>
+      <span class="home-indicator" aria-hidden="true"></span>
+    </div>
+  </div>
+  <figcaption><span class="caption-dot"></span>Members & fees</figcaption>
+</figure></div></section>
+    <section class="infrastructure" aria-labelledby="infrastructure-title"><div><p class="eyebrow"><span></span> BUILT AROUND WHAT ALREADY WORKED</p><h2 id="infrastructure-title">Custom-built.<br /><em>Connected.</em></h2></div><div class="infra-copy"><p>Running on Google Cloud and connected to the group’s existing Google Drive archive for photos and files.</p><div class="tags"><span>GOOGLE CLOUD</span><span>GOOGLE DRIVE</span></div></div></section>
     <footer><span>© <span id="js-year"></span> Cardio Can Wait</span><a href="../../index.html">← All projects</a></footer>
   </main>
-  <script src="../../js/main.js"></script>
-  <script src="../../js/krucze-showcase.js"></script>
+  <script src="../../js/main.js"></script><script src="../../js/krucze-showcase.js"></script>
 </body>
 </html>

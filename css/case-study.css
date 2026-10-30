@@ -432,7 +432,18 @@ body {
   .case-button {
     transition: none;
   }
-  .case-button: hover {
+  .case-button:hover {
     transform: none;
   }
+}
+
+.case-calendar-shot {
+  max-width: 31rem;
+  margin: 2rem auto 0;
+}
+.case-demo-note {
+  max-width: 52rem;
+  margin: 1rem auto 0;
+  color: var(--muted, #b8a88f);
+  text-align: center;
 }

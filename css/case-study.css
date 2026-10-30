@@ -33,7 +33,7 @@ h2 { font-size: clamp(2.2rem, 4vw, 3.7rem); }
 .phone.iphone::before { background: #8d8a86; }
 figcaption { margin-top: 12px; color: var(--muted); font-size: .8rem; font-weight: 650; }
 .member-section { background: radial-gradient(ellipse at 50% 60%, #5a201a33, transparent 70%); }
-.demo-note { color: var(--muted) !important; font-size: .9rem !important; }
+.section-copy .demo-note { color: var(--muted); font-size: .9rem; }
 .interaction { display: grid; grid-template-columns: 1fr 320px; align-items: center; gap: 70px; }
 .interaction .phone-figure { justify-self: center; }
 .infrastructure { border: 1px solid var(--line); background: #211713; border-radius: 20px; padding: 42px; margin: 0 0 70px; }

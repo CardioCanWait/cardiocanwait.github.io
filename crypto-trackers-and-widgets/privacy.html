@@ -171,8 +171,11 @@
       <p>
         The version of the Android app distributed through Huawei AppGallery does not use Google
         services. It does not use Firebase Analytics, Firebase Crashlytics, Firebase Remote Config,
-        or Google AdMob. It uses built-in default settings instead of remote configuration. Only if you
-        switch it on in the privacy notice (it is off by default), it sends crash reports and anonymous
+        or Google AdMob. Instead of Firebase it uses HUAWEI AppGallery Connect Remote Configuration to adjust app
+        settings, such as how often ads appear. The app fetches these settings from Huawei each time it starts, regardless of your
+        choices in the privacy notice, because AppGallery Connect offers no consent control for it; the request, like any network
+        request, reveals your IP address to Huawei, and Huawei's SDK may add technical app and device information, under Huawei's
+        own terms and privacy notices. Only if you switch it on in the privacy notice (it is off by default), it sends crash reports and anonymous
         usage counts to Sentry, as described under <em>Crash reports</em> below.
       </p>
       <p>
@@ -371,6 +374,7 @@
         </li>
         <li>Google AdMob (iOS, Google Play and Samsung Galaxy Store versions) for advertising.</li>
         <li>HUAWEI Ads (Petal Ads) and the HUAWEI Ads Kit (Huawei AppGallery version) for advertising.</li>
+        <li>HUAWEI AppGallery Connect Remote Configuration (Huawei AppGallery version) for remote settings.</li>
         <li>Sentry (Functional Software, Inc.; EU region, Germany) for crash reports and anonymous usage counts in the Huawei AppGallery version, only if you allow it.</li>
         <li>
           Google Firebase Analytics and Firebase Crashlytics (iOS, Google Play and Samsung Galaxy

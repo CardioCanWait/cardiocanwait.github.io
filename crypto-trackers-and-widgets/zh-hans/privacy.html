@@ -138,7 +138,7 @@
       <h2 id="huawei">华为应用市场（AppGallery）版本</h2>
       <p>
         通过华为应用市场分发的 Android 应用版本不使用 Google 服务。它不使用 Firebase Analytics、
-        Firebase Crashlytics、Firebase Remote Config 或 Google AdMob。它使用内置默认设置，而不使用远程配置。
+        Firebase Crashlytics、Firebase Remote Config 或 Google AdMob。它改用 HUAWEI AppGallery Connect 远程配置来调整应用设置（例如广告出现的频率）。应用每次启动时都会从华为获取这些设置，且不受您在隐私提示中所作选择的影响，因为 AppGallery Connect 没有为其提供同意控制；该请求与任何网络请求一样会向华为暴露您的 IP 地址，华为的 SDK 还可能附带技术性的应用和设备信息，由华为按其自身条款和隐私声明处理。
         仅当您在隐私提示中打开相应开关（默认关闭）时，它才会向 Sentry 发送崩溃报告和匿名使用次数，详见下文<em>崩溃报告</em>。
       </p>
       <p>
@@ -274,6 +274,7 @@
         </li>
         <li>Google AdMob（iOS、Google Play 和三星 Galaxy Store 版本），用于广告。</li>
         <li>HUAWEI Ads（Petal Ads）和 HUAWEI Ads Kit（华为应用市场版本），用于广告。</li>
+        <li>HUAWEI AppGallery Connect 远程配置（华为应用市场版本），用于远程设置。</li>
         <li>Sentry（Functional Software, Inc.；欧盟区域，德国），用于华为应用市场版本中的崩溃报告和匿名使用次数，仅在您允许时使用。</li>
         <li>
           Google Firebase Analytics 和 Firebase Crashlytics（iOS、Google Play 和三星 Galaxy Store 版本），用于使用分析和崩溃报告。

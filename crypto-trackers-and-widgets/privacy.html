@@ -66,7 +66,7 @@
         </li>
         <li>
           <strong>The Huawei AppGallery version</strong> does not use Google services. It uses
-          HUAWEI Ads and a single first-launch privacy notice; see <a href="#huawei">Huawei AppGallery version</a>.
+          HUAWEI Ads, optional Sentry crash reports and a single first-launch privacy notice; see <a href="#huawei">Huawei AppGallery version</a>.
         </li>
         <li>
           <strong>Future versions and stores</strong> may add or change services within the limits
@@ -170,12 +170,10 @@
       <h2 id="huawei">Huawei AppGallery version</h2>
       <p>
         The version of the Android app distributed through Huawei AppGallery does not use Google
-        services. At the time of writing it does not use Firebase Analytics, Firebase Crashlytics,
-        Firebase Remote Config, or Google AdMob, and it does not send us usage analytics or crash
-        reports. It uses built-in default settings instead of remote configuration. We may add
-        Huawei's own equivalents of these services to it; if we do, they work as described in the
-        analytics, crash report and remote configuration sections above, with Huawei as the service
-        provider, and consent is asked where the law requires it.
+        services. It does not use Firebase Analytics, Firebase Crashlytics, Firebase Remote Config,
+        or Google AdMob. It uses built-in default settings instead of remote configuration. Only if you
+        switch it on in the privacy notice (it is off by default), it sends crash reports and anonymous
+        usage counts to Sentry, as described under <em>Crash reports</em> below.
       </p>
       <p>
         <strong>Ads.</strong> This version shows ads served by HUAWEI Ads (Petal Ads) through the
@@ -194,9 +192,9 @@
       </p>
       <p>
         <strong>One privacy notice.</strong> The first time the app starts, it shows a single privacy notice that covers everything
-        about privacy and ads; there is no separate ads or tracking notice after it. It asks you to read this privacy policy (with a link to it) and tells you how ads work. You
+        about privacy, ads and crash reports; there is no separate ads, tracking or crash report notice after it. It asks you to read this privacy policy (with a link to it) and tells you how ads work. You
         choose one of three answers: agree and allow personalized ads, agree without personalization, or disagree (the app then
-        closes). The app does not start the HUAWEI Ads SDK or request ads until you have answered.
+        closes). A switch on the same notice, off by default, lets you also allow crash reports. The app does not start the HUAWEI Ads SDK or request ads until you have answered.
       </p>
       <p>
         <strong>Ads are shown either way.</strong> The app is free and supported by ads. If you allow personalization, the app asks
@@ -210,7 +208,18 @@
         not mark its audience as children and it is not directed at children. The app does not read or store your OAID itself.
       </p>
       <p>
-        <strong>Your choices.</strong> You can review and change your ad personalization choice at any time through
+        <strong>Crash reports.</strong> Only if you switch it on, the app sends crash reports and anonymous usage counts to
+        Sentry (Functional Software, Inc.), a crash reporting service, on servers in Germany (EU region). A report contains the
+        app version, device model, Android version, the latest app actions (such as which screen was opened) and the technical
+        error. The app does not collect your name, email address or advertising ID, does not turn on Sentry's collection of
+        personal data and filters email addresses, device identifiers and IP addresses out of the text of reports on a best-effort
+        basis, but a report is technical data and we cannot promise that it never contains anything personal. We use it only to
+        find and fix crashes and to see which features are used. If you leave the switch off, nothing is sent and the
+        crash reporting service is not started. You can change this later in <em>Privacy settings</em>; turning it off stops
+        sending from then on. Sentry keeps reports for 30 days. Legal basis: your consent, which you can withdraw at any time.
+      </p>
+      <p>
+        <strong>Your choices.</strong> You can review and change your ad personalization choice and your crash report choice at any time through
         <em>Privacy settings</em> in the app; a notice is shown and your new answer replaces the old one. Turning personalization
         off stops personalized ad requests; ads continue to be shown, without personalization. Your answer is stored only on your
         device. On Huawei devices you can also reset your OAID or turn off personalized ads in the device's system settings. The
@@ -361,6 +370,7 @@
         </li>
         <li>Google AdMob (iOS, Google Play and Samsung Galaxy Store versions) for advertising.</li>
         <li>HUAWEI Ads (Petal Ads) and the HUAWEI Ads Kit (Huawei AppGallery version) for advertising.</li>
+        <li>Sentry (Functional Software, Inc.; EU region, Germany) for crash reports and anonymous usage counts in the Huawei AppGallery version, only if you allow it.</li>
         <li>
           Google Firebase Analytics and Firebase Crashlytics (iOS, Google Play and Samsung Galaxy
           Store versions) for usage analytics and crash reports.
@@ -408,7 +418,7 @@
         installation IDs are kept until they are deleted at our request; Google removes them within
         180 days after deletion. These periods apply to the services we use in the iOS app and the
         Google Play and Samsung Galaxy Store versions. Data processed by HUAWEI Ads in the Huawei
-        AppGallery version is kept under Huawei's own policies, and data processed by any other
+        AppGallery version is kept under Huawei's own policies, crash reports sent to Sentry are kept for 30 days, and data processed by any other
         service we add is kept under that service's policies and its retention settings in our
         account. Requests to the servers listed under
         <a href="#third-parties">Third-party services and servers</a> may also be logged by the hosting

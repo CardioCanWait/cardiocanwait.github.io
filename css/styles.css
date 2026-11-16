@@ -131,9 +131,10 @@ hr.sep{
 .btn .app-icon{
   width:44px;
   height:44px;
+  flex: 0 0 44px;
   border-radius: 12px;
   border:0px solid var(--border);
-  background: rgba(255,255,255,0.08);
+  background: transparent;
   object-fit: cover;
 }
 .btn .title{

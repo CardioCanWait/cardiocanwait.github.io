@@ -4,90 +4,150 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Cardio Can Wait — small software studio." />
+  <meta name="theme-color" content="#0f0d0c" />
   <title>Cardio Can Wait</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/home.css" />
   <link rel="icon" href="assets/logo.png" type="image/png" />
 </head>
 <body>
-  <div class="container">
-    <div class="shell">
-      <section class="card">
-        
-        <div class="brand">
-          <img src="assets/logo.png" alt="Cardio Can Wait logo" />
-          <div>
-            <h1>Cardio Can Wait</h1>
-            <p>Software development</p>
-          </div>
-        </div>
-
+  <main class="wrap">
+    <header class="hero">
+      <img class="hero-logo" src="assets/brand/logo-pixel.jpg" width="480" height="468" alt="Cardio Can Wait logo: a raven with a pint, a kettlebell, a laptop and a burger" fetchpriority="high" />
+      <div class="hero-copy">
+        <h1>Cardio Can Wait</h1>
+        <p class="hero-tagline">Software development</p>
         <p class="quote">“Don’t develop anything you wouldn’t use yourself.”</p>
         <p class="credit">
-          * What Charles Munger would say to Warrent Buffet if they were software developers
+          * What Charles Munger would say to Warren Buffett if they were software developers
         </p>
+      </div>
+    </header>
 
-        <hr class="sep" />
+    <h2 class="section-title">Products</h2>
 
-        <div class="footer">
-          <span>© <span id="js-year"></span> Cardio Can Wait</span>
-          <span>•</span>
-          <a href="support.html">Contact & Support</a>
-        </div>
-      </section>
-
-      <aside class="card">
-        <h2 style="margin:0 0 10px 0; font-size:1.1rem;">Products</h2>
-
-        <div class="grid">
-          <a class="btn" href="https://clippydo.cardiocanwait.com">
-            <div class="left">
-              <img class="app-icon" src="assets/apps/ClippyDo212.png" alt="ClippyDo app icon" />
-              <div class="app-text">
-                <div class="title">ClippyDo</div>
-                <div class="sub">Ultimate clipboard assistant power tool</div>
+    <ul class="apps">
+      <li>
+        <a class="tile" href="boxingtrainer/">
+          <div class="stage" aria-hidden="true">
+            <div class="shots">
+              <img src="boxingtrainer/assets/screenshots/home.webp" width="420" height="909" alt="" loading="lazy" />
+              <img src="boxingtrainer/assets/screenshots/workout.webp" width="420" height="934" alt="" loading="lazy" />
+              <img src="boxingtrainer/assets/screenshots/customize.webp" width="420" height="909" alt="" loading="lazy" />
+            </div>
+          </div>
+          <div class="body">
+            <div class="head">
+              <img class="app-icon" src="boxingtrainer/assets/app-icon-512.png" alt="" />
+              <div>
+                <h3 class="title">Drillio — Boxing Trainer</h3>
+                <p class="sub">Offline-first boxing workouts, with audio coaching in development</p>
               </div>
             </div>
-            <span class="pill">Visit →</span>
-          </a>
+            <div class="meta">
+              <ul class="platforms" aria-label="Platforms">
+                <li><img src="assets/platforms/android.svg" alt="Android" title="Android" /></li>
+                <li><img src="assets/platforms/apple.svg" alt="iOS" title="iOS" /></li>
+              </ul>
+              <span class="pill">Explore →</span>
+            </div>
+          </div>
+        </a>
+      </li>
 
-          <a class="btn" href="crypto-trackers-and-widgets/">
-            <div class="left">
-              <img class="app-icon" src="assets/apps/cryptofearandgreed.png" alt="Crypto Trackers and Widgets app icon" />
-              <div class="app-text">
-                <div class="title">Crypto Trackers and Widgets</div>
-                <div class="sub">Market sentiment, coin prices and home-screen widgets</div>
+      <li>
+        <a class="tile" href="crypto-trackers-and-widgets/">
+          <div class="stage" aria-hidden="true">
+            <div class="shots">
+              <img src="assets/shots/crypto-overview.jpg" width="420" height="877" alt="" loading="lazy" />
+              <img src="assets/shots/crypto-heatmap.jpg" width="420" height="828" alt="" loading="lazy" />
+              <img src="assets/shots/crypto-coin.jpg" width="420" height="828" alt="" loading="lazy" />
+            </div>
+          </div>
+          <div class="body">
+            <div class="head">
+              <img class="app-icon" src="assets/apps/cryptofearandgreed.png" alt="" />
+              <div>
+                <h3 class="title">Crypto Trackers and Widgets</h3>
+                <p class="sub">Market sentiment, coin prices and home-screen widgets</p>
               </div>
             </div>
-            <span class="pill">Visit →</span>
-          </a>
+            <div class="meta">
+              <ul class="platforms" aria-label="Platforms">
+                <li><img src="assets/platforms/android.svg" alt="Android" title="Android" /></li>
+                <li><img src="assets/platforms/apple.svg" alt="iOS" title="iOS" /></li>
+              </ul>
+              <span class="pill">Visit →</span>
+            </div>
+          </div>
+        </a>
+      </li>
 
-          <a class="btn" href="boxingtrainer/">
-            <div class="left">
-              <img class="app-icon" src="boxingtrainer/assets/app-icon-512.png" alt="" aria-hidden="true" />
-              <div class="app-text">
-                <div class="title">Drillio — Boxing Trainer</div>
-                <div class="sub">Offline-first boxing workouts, with audio coaching in development</div>
+      <li>
+        <a class="tile" href="apps/krucze-galery/">
+          <div class="stage" aria-hidden="true">
+            <div class="shots">
+              <img src="assets/projects/demos/events.jpg" width="480" height="924" alt="" loading="lazy" />
+              <img src="assets/projects/demos/member.jpg" width="480" height="924" alt="" loading="lazy" />
+              <img src="assets/projects/demos/event-detail.jpg" width="480" height="924" alt="" loading="lazy" />
+            </div>
+          </div>
+          <div class="body">
+            <div class="head">
+              <img class="app-icon" src="assets/projects/kruki-mark.png" alt="" />
+              <div>
+                <h3 class="title">Krucze Galery · Custom platform</h3>
+                <p class="sub">Mobile-first public site and private member workspace</p>
               </div>
             </div>
-            <span class="pill">Explore →</span>
-          </a>
+            <div class="meta">
+              <ul class="platforms" aria-label="Platforms">
+                <li><img src="assets/platforms/android.svg" alt="Android" title="Android" /></li>
+                <li><img src="assets/platforms/apple.svg" alt="iOS" title="iOS" /></li>
+                <li><img src="assets/platforms/windows.svg" alt="Windows" title="Windows" /></li>
+                <li><img src="assets/platforms/macos.svg" alt="macOS" title="macOS" /></li>
+                <li><img src="assets/platforms/linux.svg" alt="Linux" title="Linux" /></li>
+                <li><img src="assets/platforms/googlechrome.svg" alt="Web browser" title="Web browser" /></li>
+              </ul>
+              <span class="pill">Explore →</span>
+            </div>
+          </div>
+        </a>
+      </li>
 
-          <a class="btn" href="apps/krucze-galery/">
-            <div class="left">
-              <img class="app-icon" src="assets/projects/kruki-mark.png" alt="Bractwo Wojowników Kruki emblem" />
-              <div class="app-text">
-                <div class="title">Krucze Galery · Custom platform</div>
-                <div class="sub">Mobile-first public site and private member workspace</div>
+      <li>
+        <a class="tile" href="https://clippydo.cardiocanwait.com">
+          <div class="stage" aria-hidden="true">
+            <div class="shots desk">
+              <img class="w1" src="assets/shots/clippydo-picker.jpg" width="760" height="566" alt="" loading="lazy" />
+              <img class="w2" src="assets/shots/clippydo-filter.jpg" width="760" height="567" alt="" loading="lazy" />
+              <img class="w3" src="assets/shots/clippydo-settings.jpg" width="760" height="574" alt="" loading="lazy" />
+            </div>
+          </div>
+          <div class="body">
+            <div class="head">
+              <img class="app-icon" src="assets/apps/ClippyDo212.png" alt="" />
+              <div>
+                <h3 class="title">ClippyDo</h3>
+                <p class="sub">Ultimate clipboard assistant power tool</p>
               </div>
             </div>
-            <span class="pill">Explore →</span>
-          </a>
-        </div>
+            <div class="meta">
+              <ul class="platforms" aria-label="Platforms">
+                <li><img src="assets/platforms/windows.svg" alt="Windows" title="Windows" /></li>
+              </ul>
+              <span class="pill">Visit →</span>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
 
-
-      </aside>
-    </div>
-  </div>
+    <footer class="footer">
+      <span>© <span id="js-year"></span> Cardio Can Wait</span>
+      <span>•</span>
+      <a href="support.html">Contact &amp; Support</a>
+    </footer>
+  </main>
 
   <script src="js/main.js"></script>
 </body>

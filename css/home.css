@@ -1,0 +1,117 @@
+/* Cardio Can Wait landing page.
+   A calm, dark, warm-neutral surface. The logo carries the colour and the pixel
+   character; the page itself only borrows a faint pixel grid and one muted amber accent. */
+@font-face{font-family:BarlowCondensed;src:url('../boxingtrainer/assets/fonts/BarlowCondensed-SemiBoldItalic.ttf') format('truetype');font-weight:600;font-style:italic;font-display:swap}
+@font-face{font-family:BarlowCondensed;src:url('../boxingtrainer/assets/fonts/BarlowCondensed-BoldItalic.ttf') format('truetype');font-weight:700;font-style:italic;font-display:swap}
+@font-face{font-family:Inter;src:url('../boxingtrainer/assets/fonts/Inter-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:Inter;src:url('../boxingtrainer/assets/fonts/Inter-Medium.ttf') format('truetype');font-weight:500;font-display:swap}
+@font-face{font-family:Inter;src:url('../boxingtrainer/assets/fonts/Inter-SemiBold.ttf') format('truetype');font-weight:600;font-display:swap}
+
+:root{
+  color-scheme:dark;
+  --bg:#0f0d0c;
+  --surface:#171412;
+  --surface-2:#1e1a17;
+  --line:rgba(255,255,255,.08);
+  --line-hover:rgba(224,164,88,.55);
+  --text:#f3ede6;
+  --soft:#cfc5ba;
+  --muted:#938878;
+  --accent:#e0a458;
+  --display:BarlowCondensed,'Arial Narrow',Impact,sans-serif;
+  --body:Inter,system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  --px:8px;
+}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;min-height:100vh;color:var(--text);font-family:var(--body);-webkit-font-smoothing:antialiased;background:var(--bg)}
+a{color:inherit;text-decoration:none}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:8px}
+.wrap{width:min(1080px,calc(100% - 48px));margin-inline:auto}
+
+/* Hero: a compact logo beside the tagline and quote. ------------------ */
+.hero{display:flex;align-items:center;gap:32px;padding:40px 0 0}
+.hero-logo{
+  flex:none;display:block;width:190px;height:auto;aspect-ratio:480/468;margin:-14px 0 -14px -14px;
+  /* Dissolve the picture into the page on every side so it reads as native, not a pasted sticker. */
+  -webkit-mask-image:radial-gradient(ellipse closest-side at 50% 50%,#000 45%,transparent 100%);
+  mask-image:radial-gradient(ellipse closest-side at 50% 50%,#000 45%,transparent 100%);
+}
+.hero-copy{min-width:0}
+h1{margin:0;font:700 clamp(34px,5vw,50px)/1 var(--display);font-style:italic;text-transform:uppercase;letter-spacing:.02em}
+.hero-tagline{margin:8px 0 0;font:600 14px var(--display);font-style:italic;text-transform:uppercase;letter-spacing:.32em;color:var(--accent)}
+.quote{max-width:640px;margin:10px 0 0;font:600 clamp(24px,3.2vw,34px)/1.15 var(--display);font-style:italic;color:var(--text);text-wrap:balance}
+.credit{max-width:560px;margin:10px 0 0;color:var(--muted);font-size:12px;font-style:italic;line-height:1.5}
+
+/* Section title ------------------------------------------------------ */
+.section-title{
+  display:flex;align-items:center;gap:16px;margin:44px 0 22px;
+  font:600 13px var(--body);letter-spacing:.22em;text-transform:uppercase;color:var(--soft);
+}
+.section-title::after{content:"";flex:1;height:1px;background:var(--line)}
+
+/* App tiles ---------------------------------------------------------- */
+.apps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;list-style:none;margin:0;padding:0}
+.tile{
+  display:flex;flex-direction:column;height:100%;overflow:hidden;
+  border:1px solid var(--line);border-radius:18px;background:var(--surface);
+  transition:transform .2s ease,border-color .2s ease,background .2s ease;
+}
+.tile:hover{transform:translateY(-3px);border-color:var(--line-hover);background:var(--surface-2)}
+
+.stage{
+  position:relative;height:290px;overflow:hidden;
+  background:
+    linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px),
+    linear-gradient(180deg,#221c17,#171412);
+  background-size:var(--px) var(--px),var(--px) var(--px),100% 100%;
+  border-bottom:1px solid var(--line);
+}
+.stage::after{content:"";position:absolute;inset:auto 0 0;height:70px;background:linear-gradient(180deg,transparent,var(--surface));pointer-events:none}
+.tile:hover .stage::after{background:linear-gradient(180deg,transparent,var(--surface-2))}
+
+/* Three phone screens side by side, centre one slightly raised. */
+.shots{position:absolute;inset:26px 22px 0;display:flex;justify-content:center;align-items:flex-start;gap:14px}
+.shots img{
+  flex:0 1 31%;min-width:0;max-width:158px;height:auto;display:block;margin-top:22px;
+  border:1px solid rgba(255,255,255,.16);border-radius:16px;background:#0b0908;
+  box-shadow:0 14px 30px rgba(0,0,0,.5);
+}
+.shots img:nth-child(2){margin-top:0}
+
+/* ClippyDo: three desktop windows in a loose stack. */
+.desk img{position:absolute;display:block;height:auto;border:1px solid rgba(255,255,255,.18);border-radius:8px;box-shadow:0 14px 30px rgba(0,0,0,.5);background:#fff}
+.desk .w1{width:62%;left:4%;top:20px}
+.desk .w2{width:50%;right:4%;top:46px}
+.desk .w3{width:46%;left:30%;top:128px}
+.shots.desk{display:block}
+
+.body{display:flex;flex-direction:column;gap:16px;padding:4px 22px 22px;flex:1}
+.head{display:flex;align-items:center;gap:14px}
+.app-icon{width:54px;height:54px;flex:none;border-radius:13px;object-fit:cover;border:1px solid var(--line)}
+.title{margin:0;font:700 clamp(24px,2.5vw,29px)/1 var(--display);font-style:italic;text-transform:uppercase;letter-spacing:.015em}
+.sub{margin:6px 0 0;color:var(--soft);font-size:14px;line-height:1.5}
+.meta{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-top:auto}
+.platforms{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.platforms li{width:34px;height:34px;display:grid;place-items:center;border-radius:9px;border:1px solid var(--line);background:rgba(255,255,255,.03)}
+.platforms img{width:16px;height:16px;display:block;opacity:.8;filter:brightness(0) invert(.88)}
+.pill{flex:none;padding:8px 16px;border:1px solid rgba(255,255,255,.16);border-radius:999px;color:var(--text);white-space:nowrap;font:500 13px var(--body);transition:border-color .2s,color .2s,background .2s}
+.tile:hover .pill{border-color:var(--accent);color:var(--accent)}
+
+/* Footer ------------------------------------------------------------- */
+.footer{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 14px;margin:64px 0 0;padding:26px 0 44px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+.footer a{color:var(--soft);border-bottom:1px solid transparent}
+.footer a:hover{border-bottom-color:var(--accent);color:var(--accent)}
+
+@media (max-width:860px){.apps{grid-template-columns:1fr}.stage{height:300px}.shots img{max-width:170px}}
+@media (max-width:560px){.hero{flex-direction:column;align-items:flex-start;gap:16px;padding-top:24px}.hero-logo{width:130px;margin:-10px 0 -10px -12px}}
+@media (max-width:420px){
+  .wrap{width:calc(100% - 32px)}
+  .stage{height:236px}
+  .shots{inset:20px 14px 0;gap:8px}
+  .shots img{margin-top:16px;border-radius:12px}
+  .desk .w3{top:104px}
+  .body{padding:4px 18px 18px}
+}
+@media (prefers-reduced-motion:reduce){.tile,.pill{transition:none}.tile:hover{transform:none}}

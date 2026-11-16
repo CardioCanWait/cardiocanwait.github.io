@@ -131,17 +131,11 @@ hr.sep{
 .btn .app-icon{
   width:44px;
   height:44px;
+  flex: 0 0 44px;
   border-radius: 12px;
   border:0px solid var(--border);
-  background: rgba(255,255,255,0.08);
+  background: transparent;
   object-fit: cover;
-}
-.btn .app-monogram{
-  display:grid;
-  place-items:center;
-  background:#10151c;
-  color:#60a5fa;
-  font-weight:800;
 }
 .btn .title{
   font-weight: 650;
